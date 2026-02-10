@@ -1,0 +1,39 @@
+/* Layout de base : header / main / footer */
+html, body {
+  height: 100%;/*Évite des comportements étranges sur certains navigateurs*/
+  margin: 0;
+}
+
+body {
+    min-height: 100vh;/*Garantit que le layout remplit l’écran Même si le contenu est court*/
+    display: flex;
+    flex-direction: column; /*Header → Main → Footer empilés*/
+
+    color: white;
+}
+
+main {
+  flex: 1;/*Main prend tout l’espace restant Footer se colle en bas naturellement*/
+}
+/*------------------------------------------*/
+.background {
+    position: fixed;
+    inset: 0;
+    background-image: url(Images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300%;
+    z-index: -2;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* 👈 intensité du filtre */
+    z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
