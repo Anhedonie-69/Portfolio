@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Réalisations</title>
     <link href="style.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="project.css" rel="stylesheet">
+    <!--<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>-->
 </head>
 <body>
     <div class="background"></div>
     <div class="overlay"></div>
     <header>
-        <a href="Index.html">Accueil</a>
+        <div class="home">
+            <a href="Index.html">ACCUEIL</a>
+        </div>
     </header>
-    <main>
-
+    <main class ="content">
+        <div id="projects-container"></div>
     </main>
-    <footer>
-        <a class="flex flex-col items-center">Contact</a>
+    <footer class="flex-column-center">
+        <a>Contact</a>
     </footer>
-    <script src="script.js"></script>
+    <script src="projects.js"></script>
 </body>
 </html>

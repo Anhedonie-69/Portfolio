@@ -5,23 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <link href="style.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>-->
 </head>
 <body>
     <div class="background"></div>
     <div class="overlay"></div>
     <header>
-        <div class="logo flex flex-col items-center">
-            <h1 class="text-white text-3xl font-semibold">&lt;BM&gt;</h1>
-            <p class="text-gray-300 text-sm tracking-wide">Création Web</p>
+        <div class="logo flex-column-center">
+            <h1>&lt;BM&gt;</h1><!--{ &lt; = < et &gt; = > }-->
+            <p>Création Web</p>
         </div>
-        <a href="projects.html">Réalisations</a>
     </header>
-    <main>
-
+    <main class="content">
+        <div class="folders">
+            <div class="folder about" data-target="about">
+                <img src="Images/red_case.png" alt="A propos">
+                <span>A PROPOS</span>
+            </div>
+            <div class="folder projects" data-target="projects">
+                <img src="Images/yellow_case.png" alt="A propos">
+                <span>REALISATIONS</span>
+            </div>
+            <div class="folder exp" data-target="exp">
+                <img src="Images/green_case.png" alt="A propos">
+                <span>EXPERIENCE</span>
+            </div>
+            <div class="folder skill" data-target="skill">
+                <img src="Images/purple_case.png" alt="A propos">
+                <span>COMPETENCES</span>
+            </div>
+        </div>
+        <div class="windows">
+            <div class="window" id="about">
+                <img src="Images/red_case.png" alt="A propos">
+                <h2>A propos</h2>
+                <p class="para">Bruno Martignat<br>
+                   Développeur Web<br>
+                   Front-End<br>
+                   Back-End
+                </p>
+            </div>
+            <div class="window" id="exp">
+                <img src="Images/green_case.png" alt="A propos">
+                <h2>Experience</h2>
+                <p class="para">Blablabla</p>
+            </div>
+            <div class="window" id="projects"></div>
+            <div class="window" id="skill">
+                <img src="Images/purple_case.png" alt="A propos">
+                <h2>Compétences</h2>
+                <p class="para">HTML, CSS, Javascrip</p>
+            </div>
+        </div>
     </main>
-    <footer>
-        <a class="flex flex-col items-center">Contact</a>
+    <footer class="flex-column-center">
+        <a>Contact</a>
     </footer>
     <script src="script.js"></script>
 </body>
