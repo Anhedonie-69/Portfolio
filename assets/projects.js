@@ -1,6 +1,7 @@
 /*
 {
     title: "",
+    incon: "",
     description: "",
     tech: [],
     link: ""
@@ -10,24 +11,28 @@
 const projects = [
     {
         title: "Drum-Pad",
+        icon: "🥁",
         description: "Boîte à rythme réalisée en JavaScript.",
         tech: ["HTML", "CSS", "JavaScript"],
         link: "https://anhedonie-69.github.io/DrumPad/"
     },
     {
         title: "Alpine",
+        icon: "🚗",
         description: "Configurateur de véhicule automobile.",
         tech: ["HTML", "CSS", "React", "Tailwind"],
         link: "https://tp-alpine-dusky.vercel.app"
     },
     {
         title: "Cagnotte",
+        icon: "💰",
         description: "Application de cagnotte en ligne.",
         tech: ["PHP", "Symfony", "MySQL"],
         link: "https://bruno-payetonpote.dwwm.garage404.com/"
     },
     {
         title: "Météo",
+        icon: "🌦️",
         description: "Application utilisant une API météo.",
         tech: ["React", "API"],
         link: "https://meteo-api-one.vercel.app/"
@@ -65,6 +70,10 @@ projects.forEach(project => {
         <h3 class="text-2xl font-bold mb-3">
             ${project.title}
         </h3>
+
+        <div class="text-5xl mb-4">
+            ${project.icon}
+        </div>
 
         <p class="text-slate-400 mb-6 flex-grow">
             ${project.description}
