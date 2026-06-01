@@ -1,69 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
-    <link href="assets/style.css" rel="stylesheet">
-    <!--<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>-->
+    <title>Bruno Martignat - Développeur Web</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <div class="background"></div>
-    <div class="overlay"></div>
-    <header>
-        <div class="logo flex-column-center">
-            <h1>&lt;BM&gt;</h1><!--{ &lt; = < et &gt; = > }-->
-            <p>Création Web</p>
+
+<body class="bg-slate-950 text-white min-h-screen">
+
+    <!-- HEADER -->
+
+    <header class="border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <div>
+                <h1 class="text-3xl font-bold text-cyan-400">
+                    &lt;BM&gt;
+                </h1>
+            </div>
+
+            <nav class="hidden md:flex gap-6">
+                <a href="#about" class="hover:text-cyan-400">À propos</a>
+                <a href="#skills" class="hover:text-cyan-400">Compétences</a>
+                <a href="#experience" class="hover:text-cyan-400">Expérience</a>
+                <a href="projects.html" class="hover:text-cyan-400">Projets</a>
+            </nav>
+
         </div>
     </header>
-    <main class="content">
-        <div class="folders">
-            <div class="folder about" data-target="about">
-                <img src="assets/Images/red_case.png" alt="A propos">
-                <span>A PROPOS</span>
-            </div>
-            <div class="folder projects" data-target="projects">
-                <img src="assets/Images/yellow_case.png" alt="A propos">
-                <span>REALISATIONS</span>
-            </div>
-            <div class="folder exp" data-target="exp">
-                <img src="assets/Images/green_case.png" alt="A propos">
-                <span>EXPERIENCE</span>
-            </div>
-            <div class="folder skill" data-target="skill">
-                <img src="assets/Images/purple_case.png" alt="A propos">
-                <span>COMPETENCES</span>
-            </div>
+
+    <!-- HERO -->
+
+    <section class="max-w-6xl mx-auto px-6 py-20">
+
+        <div class="text-center">
+
+            <h2 class="text-5xl font-bold mb-6">
+                Développeur Web
+            </h2>
+
+            <p class="text-slate-300 max-w-2xl mx-auto text-lg">
+                Actuellement en formation Développeur Web chez Garage404,
+                je développe des applications web modernes avec
+                JavaScript, React, PHP et Symfony.
+            </p>
+
         </div>
-        <div class="windows">
-            <div class="window" id="about">
-                <img src="assets/Images/red_case.png" alt="A propos">
-                <h2>A propos</h2>
-                <p class="para">Actuellement en formation de développeur web, 
-                    je développe mes compétences en programmation, 
-                    création de sites et développement d’applications. 
-                    Motivé, sérieux et curieux, 
-                    je souhaite intégrer une entreprise afin de mettre 
-                    en pratique mes connaissances et continuer à progresser 
-                    au sein d’une équipe professionnelle.
+
+    </section>
+
+    <!-- CARTES -->
+
+    <main class="max-w-6xl mx-auto px-6 pb-20">
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <!-- A PROPOS -->
+
+            <section id="about"
+                class="bg-slate-900 rounded-2xl p-8 shadow-lg">
+
+                <h3 class="text-2xl font-bold mb-4 text-red-400">
+                    À propos
+                </h3>
+
+                <p class="text-slate-300 leading-relaxed">
+                    Actuellement en formation de développeur web,
+                    je développe mes compétences en programmation,
+                    création de sites et développement d'applications.
+                    Motivé, sérieux et curieux, je souhaite intégrer
+                    une entreprise afin de mettre en pratique mes
+                    connaissances.
                 </p>
-            </div>
-            <div class="window" id="exp">
-                <img src="assets/Images/green_case.png" alt="A propos">
-                <h2>Experience</h2>
-                <p class="para">Formation Développeur web Garage404 Roanne</p>
-            </div>
-            <div class="window" id="projects"></div>
-            <div class="window" id="skill">
-                <img src="assets/Images/purple_case.png" alt="A propos">
-                <h2>Compétences</h2>
-                <p class="para">HTML, CSS, Javascrip, PHP, SQL, MySQL, React, Node.js, Symfony, VS Code</p>
-            </div>
+
+            </section>
+
+            <!-- EXPERIENCE -->
+
+            <section id="experience"
+                class="bg-slate-900 rounded-2xl p-8 shadow-lg">
+
+                <h3 class="text-2xl font-bold mb-4 text-green-400">
+                    Expérience
+                </h3>
+
+                <p class="text-slate-300">
+                    Formation Développeur Web et Web Mobile
+                    chez Garage404 à Roanne.
+                </p>
+
+            </section>
+
+            <!-- COMPETENCES -->
+
+            <section id="skills"
+                class="bg-slate-900 rounded-2xl p-8 shadow-lg md:col-span-2">
+
+                <h3 class="text-2xl font-bold mb-6 text-purple-400">
+                    Compétences
+                </h3>
+
+                <div class="flex flex-wrap gap-3">
+
+                    <span class="bg-cyan-500/20 px-4 py-2 rounded-full">
+                        HTML
+                    </span>
+
+                    <span class="bg-cyan-500/20 px-4 py-2 rounded-full">
+                        CSS
+                    </span>
+
+                    <span class="bg-cyan-500/20 px-4 py-2 rounded-full">
+                        JavaScript
+                    </span>
+
+                    <span class="bg-cyan-500/20 px-4 py-2 rounded-full">
+                        React
+                    </span>
+
+                    <span class="bg-cyan-500/20 px-4 py-2 rounded-full">
+                        PHP
+                    </span>
+
+                    <span class="bg-cyan-500/20 px-4 py-2 rounded-full">
+                        Symfony
+                    </span>
+
+                    <span class="bg-cyan-500/20 px-4 py-2 rounded-full">
+                        SQL
+                    </span>
+
+                    <span class="bg-cyan-500/20 px-4 py-2 rounded-full">
+                        MySQL
+                    </span>
+
+                    <span class="bg-cyan-500/20 px-4 py-2 rounded-full">
+                        Node.js
+                    </span>
+
+                    <span class="bg-cyan-500/20 px-4 py-2 rounded-full">
+                        Tailwind
+                    </span>
+
+                </div>
+
+            </section>
+
+            <!-- PROJETS -->
+
+            <section
+                class="bg-slate-900 rounded-2xl p-8 shadow-lg md:col-span-2 text-center">
+
+                <h3 class="text-2xl font-bold mb-4 text-yellow-400">
+                    Réalisations
+                </h3>
+
+                <p class="text-slate-300 mb-6">
+                    Découvrez les projets réalisés durant ma formation.
+                </p>
+
+                <a href="projects.html"
+                    class="inline-block bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-xl font-semibold transition">
+
+                    Voir mes projets
+
+                </a>
+
+            </section>
+
         </div>
+
     </main>
-    <footer class="flex-column-center">
-        <a>Contact : brunomartignat@gmail.com</a>
+
+    <footer class="border-t border-slate-800 py-6 text-center text-slate-400">
+
+        Contact :
+        <a
+            href="mailto:brunomartignat@gmail.com"
+            class="text-cyan-400">
+            brunomartignat@gmail.com
+        </a>
+
     </footer>
-    <script src="assets/script.js"></script>
+
 </body>
 </html>

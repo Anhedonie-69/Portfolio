@@ -1,27 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Réalisations</title>
-    <link href="assets/style.css" rel="stylesheet">
-    <link href="assets/project.css" rel="stylesheet">
-    <!--<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>-->
+    <title>Mes Réalisations</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <div class="background"></div>
-    <div class="overlay"></div>
-    <header>
-        <div class="home">
-            <a href="Index.html">ACCUEIL</a>
+
+<body class="bg-slate-950 text-white min-h-screen">
+
+    <header class="border-b border-slate-800">
+
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <h1 class="text-3xl font-bold text-cyan-400">
+                &lt;BM&gt;
+            </h1>
+
+            <a
+                href="index.html"
+                class="bg-slate-800 hover:bg-slate-700 px-4 py-2 rounded-lg transition">
+
+                Retour à l'accueil
+
+            </a>
+
         </div>
+
     </header>
-    <main class ="content">
-        <div id="projects-container"></div>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+
+        <div class="text-center mb-12">
+
+            <h2 class="text-4xl font-bold mb-4">
+                Mes Réalisations
+            </h2>
+
+            <p class="text-slate-400">
+                Quelques projets développés durant ma formation.
+            </p>
+
+        </div>
+
+        <div
+            id="projects-container"
+            class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        </div>
+
     </main>
-    <footer class="flex-column-center">
-        <a>Contact</a>
+
+    <footer class="border-t border-slate-800 py-6 text-center text-slate-400">
+
+        Contact :
+        <a
+            href="mailto:brunomartignat@gmail.com"
+            class="text-cyan-400">
+            brunomartignat@gmail.com
+        </a>
+
     </footer>
+
     <script src="assets/projects.js"></script>
+
 </body>
 </html>
